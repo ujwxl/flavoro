@@ -21,7 +21,7 @@ function ItemCard( {id, img, name, price, rating, qty} ) {
       }} className="absolute right-7 text-gray-600 cursor-pointer" />
       {console.log(img)}
       <img src={img} alt="" className="w-[50px] h-[50px]" />
-      <div className="leading-3">
+      <div className="">
         <h2 className="font-bold text-gray-800">{name}</h2>
         <div className="flex justify-between">
           <span className="text-green-500 font-bold">{price}</span>
