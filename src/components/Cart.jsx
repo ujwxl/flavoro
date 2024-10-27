@@ -6,7 +6,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 function Cart() {
-  const [activeCart, setActiveCart] = useState(true);
+  const [activeCart, setActiveCart] = useState(false);
 
 const cartItems = useSelector((state) => state.cart.cart);
 const totalQty = cartItems.reduce((acc , cur) => acc + cur.qty, 0);
