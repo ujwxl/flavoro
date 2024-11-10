@@ -18,8 +18,8 @@ console.log(cartItems)
   return (
     <>
       <div
-        className={`fixed right-0 top-0 lg:w-[20vw] h-full p-5 bg-white my-3 ${
-          activeCart ? "translate-x-0" : "translate-x-full"
+        className={`fixed right-0 top-0 lg:w-[20vw] h-full p-5 bg-white my-3 rounded-xl bg-opacity-25 backdrop-blur-sm border-2 border-white border-opacity-20 ${
+          activeCart ? "translate-x-0 visible" : "translate-x-full invisible"
         } transition-all duration-500 z-50`}
       >
         <div className="flex justify-between items-center ">

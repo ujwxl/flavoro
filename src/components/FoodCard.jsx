@@ -10,7 +10,7 @@ console.log(id, img, name, price, desc, rating, qty)
 
   return (
     <div
-      className="font-bold w-[250px] bg-white p-5 flex flex-col rounded-lg gap-2"
+      className="font-bold w-[250px] bg-white p-5 flex flex-col rounded-lg gap-2 justify-between"
       key={id}
     >
       <img
@@ -27,7 +27,7 @@ console.log(id, img, name, price, desc, rating, qty)
         <span className="flex justify-center items-center">
           <AiFillStar className="mr-1 text-yellow-400" /> {rating}
         </span>
-        <button onClick={() => {dispatch(addToCart({id, name, price, img , qty : 1})), handleToast(name)}} className="p-1 text-white bg-green-500 hover:bg-green-600 rounded-lg text-sm">
+        <button onClick={() => {dispatch(addToCart({id, name, price, img , qty : 1})), handleToast(name)}} className="p-1 text-white bg-green-500 hover:bg-green-600 rounded-md text-sm pt-1.5 pb-1.5 pl-3 pr-3">
           Add to cart
         </button>
       </div>
